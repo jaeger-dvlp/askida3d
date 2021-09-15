@@ -8,7 +8,7 @@ export class Header extends Component {
       <header className="container-lg container-xl col-12 p-2">
         <div className="col-12 d-flex p-0 m-0">
           <div className="logo col-12 col-lg-6 col-xl-6 p-3 m-0 d-flex justify-content-start">
-            <img alt="Askida3D Logo" src={Logo} height="40"></img>
+            <img alt="Askida3D Logo" src={Logo} height="50"></img>
           </div>
           <div className="header-nav col-xl-6 col-lg-6 p-3 m-0 justify-content-end align-items-center d-xl-flex d-lg-flex d-none">
             <Router>
