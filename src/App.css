@@ -50,3 +50,61 @@ a {
   opacity: 0;
   transition: all 0.2s;
 }
+
+/* ! WELCOME !*/
+
+.welcomeLeft {
+  z-index: 5;
+}
+
+.welcomeRight {
+  z-index: 1;
+}
+
+.welcomeHeader {
+  color: black;
+  font-family: Poppins;
+  font-size: calc(1.5vw + 2rem);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1920px) {
+  .welcomeHeader {
+    font-size: 70px !important;
+  }
+}
+
+.welcomeDesc {
+  color: #707070;
+  font-size: 18px;
+}
+
+.welcomeButton a {
+  margin-right: 20px;
+  padding: 15px 35px 15px 35px;
+  border-radius: 200px;
+  color: white !important;
+  min-width: 120px;
+  text-align: center !important;
+  transition: all 0.4s;
+}
+
+.welcomeButton .support-btn {
+  background-color: #009ade;
+  box-shadow: 0px 10px 20px #009bde83;
+}
+
+.welcomeButton .signup-btn {
+  background-color: #f14190;
+  box-shadow: 0px 10px 20px #f1419077;
+}
+
+.welcomeButton a:hover {
+  transform: translateY(-10px);
+}
+
+.welcomeHint {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
