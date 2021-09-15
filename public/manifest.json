@@ -1,6 +1,23 @@
 {
   "short_name": "Askida 3D",
   "name": "3D Printer donor organization for schools in Turkey.",
+  "icons": [
+    {
+      "src": "./logo.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "./logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
   "start_url": ".",
   "theme_color": "#fff",
   "background_color": "#fff"
