@@ -42,6 +42,9 @@ export class turkeyMap extends Component {
   render() {
     return (
       <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
         selected=""
         className="map d-none d-xl-flex d-lg-flex justify-content-center"
         ref={this.mapRef}
