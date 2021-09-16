@@ -1,7 +1,22 @@
 import React, {Component} from 'react'
 import {BrowserRouter as Router, Link} from 'react-router-dom'
 import WelcomeIMG from '../img/sectionPrinterImage.png'
+import {animateScroll as scroll, Events} from 'react-scroll'
 export class WelcomeSection extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {selectedMap: 'İstanbul'}
+    this.scrollTo = this.scrollTo.bind(this)
+  }
+
+  componentDidMount() {
+    Events.scrollEvent.register('begin', function (to, element) {})
+  }
+
+  scrollTo() {
+    scroll.scrollTo(750, {duration: 100, spy: true, smooth: true})
+  }
+
   render() {
     return (
       <div className="welcomeSection container-xl container-lg p-0 col-12">
@@ -23,7 +38,7 @@ export class WelcomeSection extends Component {
             </div>
             <div className="text-left pt-3 pb-3 d-flex welcomeButton">
               <Router>
-                <Link to="" className="support-btn">
+                <Link to="" onClick={this.scrollTo} className="support-btn">
                   Destek Ol
                 </Link>
                 <Link to="" className="signup-btn">
