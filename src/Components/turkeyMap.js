@@ -8,10 +8,7 @@ export class turkeyMap extends Component {
   constructor(props) {
     super(props)
     this.mapGroup = React.createRef()
-    this.createRef = React.createRef()
-    this.selectedMap = React.createRef()
     this.setAllTooltip = this.setAllTooltip.bind(this)
-    this.scroll = this.scrollTo.bind(this)
   }
 
   componentDidMount() {
@@ -19,7 +16,7 @@ export class turkeyMap extends Component {
     this.setAllTooltip()
 
     document.querySelectorAll('.land').forEach((elm) => {
-      elm.addEventListener('click', (event) => {
+      elm.addEventListener('click', () => {
         document.querySelector('.map-selected').classList.remove('map-selected')
         elm.classList.add('map-selected')
         this.setState({selectedCountry: elm.getAttribute('data-tip')})
@@ -31,9 +28,10 @@ export class turkeyMap extends Component {
 
   setAllTooltip() {
     let nodes = this.mapGroup.current.childNodes
-    let node = Array.prototype.slice.call(nodes)
-    node.map((elm) => elm.setAttribute('data-tip', elm.getAttribute('title')))
-
+    nodes = Array.prototype.slice
+      // eslint-disable-next-line no-unused-vars
+      .call(nodes)
+      .map((elm) => elm.setAttribute('data-tip', elm.getAttribute('title')))
     ReactTooltip.rebuild()
   }
 
