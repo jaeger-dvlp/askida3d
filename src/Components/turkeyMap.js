@@ -1,23 +1,30 @@
 import React, {Component} from 'react'
 import ReactTooltip from 'react-tooltip'
+import {animateScroll as scroll} from 'react-scroll'
+import MapContext from './MapContext'
 
 export class turkeyMap extends Component {
+  static contextType = MapContext
   constructor(props) {
     super(props)
     this.mapGroup = React.createRef()
     this.createRef = React.createRef()
+    this.selectedMap = React.createRef()
     this.setAllTooltip = this.setAllTooltip.bind(this)
-
-    this.state = {countries: []}
+    this.scroll = this.scrollTo.bind(this)
   }
 
   componentDidMount() {
+    const {currentMap, setMap} = this.context
     this.setAllTooltip()
 
     document.querySelectorAll('.land').forEach((elm) => {
       elm.addEventListener('click', (event) => {
         document.querySelector('.map-selected').classList.remove('map-selected')
         elm.classList.add('map-selected')
+        this.setState({selectedCountry: elm.getAttribute('data-tip')})
+        setMap(this.state.selectedCountry)
+        this.scrollTo()
       })
     })
   }
@@ -25,12 +32,13 @@ export class turkeyMap extends Component {
   setAllTooltip() {
     let nodes = this.mapGroup.current.childNodes
     let node = Array.prototype.slice.call(nodes)
-    node.map((elm) =>
-      elm.setAttribute('data-tip', elm.getAttribute('title'))
-      //console.log(elm)
-    )
+    node.map((elm) => elm.setAttribute('data-tip', elm.getAttribute('title')))
 
     ReactTooltip.rebuild()
+  }
+
+  scrollTo() {
+    scroll.scrollTo(900, {duration: 70, smooth: true, spy: true})
   }
 
   render() {
