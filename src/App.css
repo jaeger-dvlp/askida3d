@@ -108,3 +108,39 @@ a {
   font-size: 15px;
   font-weight: 500;
 }
+
+.land {
+  fill: #cccccc;
+  fill-opacity: 1;
+  stroke: white;
+  stroke-opacity: 1;
+  stroke-width: 0.5;
+}
+
+.map {
+  margin-top: 100px;
+}
+
+.mapsvg {
+  min-width: 800px;
+  max-width: 800px;
+  min-height: 400px;
+}
+
+.land {
+  cursor: pointer;
+  fill: #009ade;
+  transition: all 0.15s;
+}
+
+.land.map-selected {
+  fill: #f14190;
+}
+
+.land:active {
+  fill: white !important;
+}
+
+.land:hover {
+  fill: #f14190;
+}
