@@ -3,10 +3,19 @@
 
 * {
   font-family: Poppins;
+  transition: all 0.2s;
+}
+
+html {
+  scroll-behavior: smooth !important;
 }
 
 a {
   text-decoration: none !important;
+}
+
+body {
+  min-height: 2000px;
 }
 
 .logo img {
@@ -115,6 +124,7 @@ a {
   stroke: white;
   stroke-opacity: 1;
   stroke-width: 0.5;
+  outline: none !important;
 }
 
 .map {
@@ -138,7 +148,7 @@ a {
 }
 
 .land:active {
-  fill: white !important;
+  fill: #ff0073 !important;
 }
 
 .land:hover {
