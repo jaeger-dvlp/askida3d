@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import TurkeyMap from './turkeyMap'
+
 export class Map extends Component {
   render() {
     return (
