@@ -5,16 +5,19 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 /* COMPONENTS */
 import Header from './Components/Header'
 import WelcomeSection from './Components/WelcomeSection'
+import SelectedMap from './Components/SelectedMap'
 import Map from './Components/Map'
+import {MapProvider} from './Components/MapContext'
 AOS.init()
 
 function App() {
   return (
-    <div className="App">
+    <MapProvider value={{currentMap: 'İstanbul'}}>
       <Header></Header>
       <WelcomeSection></WelcomeSection>
-      <Map className=""></Map>
-    </div>
+      <Map></Map>
+      <SelectedMap></SelectedMap>
+    </MapProvider>
   )
 }
 
