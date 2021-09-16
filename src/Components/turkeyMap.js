@@ -15,7 +15,7 @@ export class turkeyMap extends Component {
   }
 
   componentDidMount() {
-    const {currentMap, setMap} = this.context
+    const {setMap} = this.context
     this.setAllTooltip()
 
     document.querySelectorAll('.land').forEach((elm) => {
