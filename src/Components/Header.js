@@ -5,7 +5,10 @@ import Logo from '../img/logo.svg'
 export class Header extends Component {
   render() {
     return (
-      <header className="container-lg container-xl col-12 p-2">
+      <header
+        data-aos="fade-down"
+        className="container-lg container-xl col-12 p-2"
+      >
         <div className="col-12 d-flex p-0 m-0">
           <div className="logo col-12 col-lg-6 col-xl-6 p-3 m-0 d-flex justify-content-start">
             <img alt="Askida3D Logo" src={Logo} height="50"></img>
