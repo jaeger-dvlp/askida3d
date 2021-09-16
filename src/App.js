@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 /* COMPONENTS */
 import Header from './Components/Header'
 import WelcomeSection from './Components/WelcomeSection'
+import Map from './Components/Map'
 AOS.init()
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <WelcomeSection></WelcomeSection>
+      <Map className=""></Map>
     </div>
   )
 }
