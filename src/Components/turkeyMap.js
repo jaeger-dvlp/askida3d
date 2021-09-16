@@ -25,10 +25,10 @@ export class turkeyMap extends Component {
   setAllTooltip() {
     let nodes = this.mapGroup.current.childNodes
     let node = Array.prototype.slice.call(nodes)
-    node.map((elm) => {
+    node.map((elm) =>
       elm.setAttribute('data-tip', elm.getAttribute('title'))
-      console.log(elm)
-    })
+      //console.log(elm)
+    )
 
     ReactTooltip.rebuild()
   }
