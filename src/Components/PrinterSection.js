@@ -5,7 +5,10 @@ import PrinterIMG from '../img/sectionPrinterImage.png'
 export default class PrinterSection extends Component {
   render() {
     return (
-      <div className="container-xl printerSection container-lg p-3 mt-5">
+      <div
+        className="container-xl printerSection container-lg p-3 mt-5"
+        style={{overflowX: 'hidden'}}
+      >
         <div className="col-12 d-flex  flex-wrap-reverse p-0 m-0 justify-content-center align-items-center">
           <div
             data-aos="fade-left"

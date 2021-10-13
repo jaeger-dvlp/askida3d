@@ -5,7 +5,10 @@ import PrizeIMG from '../img/prize.png'
 export default class PrizeSection extends Component {
   render() {
     return (
-      <div className="container-xl printerSection container-lg p-3 mt-5">
+      <div
+        className="container-xl printerSection container-lg p-3 mt-5"
+        style={{overflowX: 'hidden'}}
+      >
         <div className="col-12 d-flex  flex-wrap p-0 m-0 justify-content-center align-items-center">
           <div
             data-aos="fade-left"
@@ -17,7 +20,7 @@ export default class PrizeSection extends Component {
           <div
             data-aos="fade-right"
             data-aos-delay="400"
-            className="col-12 col-xl-6 col-lg-6 p-3 d-flex flex-wrap justify-content-center align-items-center"
+            className="aos-init aos-animate col-12 col-xl-6 col-lg-6 p-3 d-flex flex-wrap justify-content-center align-items-center"
           >
             <div className="col-12 text-pos">
               <h1 className="p-0  printerSectionHeader">
