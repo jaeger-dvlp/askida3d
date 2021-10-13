@@ -46,6 +46,7 @@ export class turkeyMap extends Component {
       .classList.add('map-selected')
     this.setState({selectedMap: e.value})
     setMap(e.value)
+    this.scrollToMobil()
   }
 
   setAllTooltip() {
@@ -58,7 +59,9 @@ export class turkeyMap extends Component {
   }
 
   scrollTo() {
-    scroll.scrollTo(1150, {duration: 70, smooth: true, spy: true})
+    if (Math.floor(window.scrollY) !== 1153) {
+      scroll.scrollTo(1155, {duration: 70, smooth: true, spy: true})
+    }
   }
   scrollToMobil() {
     scroll.scrollTo(880, {duration: 70, smooth: true, spy: true})

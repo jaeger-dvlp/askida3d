@@ -14,7 +14,7 @@ export class WelcomeSection extends Component {
   }
 
   scrollTo() {
-    scroll.scrollTo(750, {duration: 100, spy: true, smooth: true})
+    scroll.scrollTo(900, {duration: 100, spy: true, smooth: true})
   }
 
   render() {
@@ -81,7 +81,7 @@ export class WelcomeSection extends Component {
           data-aos-delay="100"
         >
           <div className="d-flex col-12 text-center justify-content-center align-items-center welcomeHintHeader pt-5 mt-5 pb-2 p-1">
-            <span className="">Bekleyen Okullarımız</span>
+            <span className="">Bekleyen Eğitim Kurumları</span>
           </div>
         </div>
         <div
@@ -89,11 +89,11 @@ export class WelcomeSection extends Component {
           data-aos-delay="100"
           className="col-12 text-center welcomeHint p-3 pb-3 p-1"
         >
-          Yardım etmek istediğiniz okulları dilerseniz aşağıdan kendiniz
-          belirleyebilir
-          <br className="d-none d-lg-block d-xl-block " />
-          veya belirli bir bölgeden yazıcısı olmayan okulları listesinden
-          sırayla gitmesini isteyebilirsiniz.
+          Yardım etmek istediğiniz eğitim kurumlarını dilerseniz aşağıdan
+          kendiniz belirleyebilir
+          <br className="d-none d-lg-block d-xl-block " /> veya belirli bir
+          bölgeden 3D Yazıcısı olmayan eğitim kurumlarını listesinden sırayla
+          gitmesini isteyebilirsiniz.
         </div>
       </div>
     )
