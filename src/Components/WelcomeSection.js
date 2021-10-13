@@ -29,7 +29,7 @@ export class WelcomeSection extends Component {
             <div
               data-aos="fade-right"
               data-aos-delay="600"
-              className="col-12 text-left"
+              className="col-12 text-pos"
             >
               <h1 className="welcomeHeader">
                 Eğitim Öğretime
@@ -40,7 +40,7 @@ export class WelcomeSection extends Component {
             <div
               data-aos="fade-right"
               data-aos-delay="600"
-              className="col-12 text-left"
+              className="col-12 text-pos"
             >
               <h4 className="welcomeDesc pt-3 pb-3">
                 3D Yazıcı bekleyen okullar için siz de bağış
@@ -51,7 +51,7 @@ export class WelcomeSection extends Component {
             <div
               data-aos="fade-up"
               data-aos-delay="700"
-              className="text-left pt-3 pb-3 d-flex welcomeButton"
+              className="text-pos pt-3 pb-3 d-flex justify-content-center justify-content-xl-start justify-content-lg-start welcomeButton"
             >
               <Router>
                 <div className="d-lg-flex d-xl-flex d-inline ">
@@ -87,11 +87,11 @@ export class WelcomeSection extends Component {
         <div
           data-aos="fade-up"
           data-aos-delay="100"
-          className="col-12 text-center welcomeHint  pb-3 p-1"
+          className="col-12 text-center welcomeHint p-3 pb-3 p-1"
         >
           Yardım etmek istediğiniz okulları dilerseniz aşağıdan kendiniz
           belirleyebilir
-          <br />
+          <br className="d-none d-lg-block d-xl-block " />
           veya belirli bir bölgeden yazıcısı olmayan okulları listesinden
           sırayla gitmesini isteyebilirsiniz.
         </div>
