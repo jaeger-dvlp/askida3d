@@ -12,6 +12,7 @@ import PrizeSection from './Components/PrizeSection'
 
 import {MapProvider} from './Components/MapContext'
 import CollapseArea from './Components/CollapseArea'
+import Footer from './Components/Footer'
 AOS.init()
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <PrinterSection />
       <PrizeSection />
       <CollapseArea />
+      <Footer />
     </MapProvider>
   )
 }
