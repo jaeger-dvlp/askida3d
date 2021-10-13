@@ -193,6 +193,7 @@ body {
 
 .mobil-map-selector {
   background-color: #f14190;
+  box-shadow: 0px 10px 20px #f1419077;
   border-radius: 20px;
 }
 
@@ -227,6 +228,27 @@ body {
 .alphabet-elm.selected-alphabet {
   color: black;
   transform: scale(1.5);
+}
+
+.button-z-blue {
+  outline: none !important;
+  border: none !important;
+  font-weight: 500;
+  margin-top: 10px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 200px;
+  color: white !important;
+  min-width: 120px;
+  text-align: center !important;
+  transition: all 0.2s;
+  font-size: calc(0.3vw + 1rem);
+  background-color: #009ade;
+  box-shadow: 0px 10px 20px #009bde83;
+}
+
+.button-z-blue:hover {
+  background-color: #f14190;
+  box-shadow: 0px 10px 20px #f1419077;
 }
 
 /*!  PRINTER SECTION !*/
@@ -277,9 +299,9 @@ body {
   font-size: 1.2rem !important;
   margin-right: 10px;
   min-width: 25px;
-  min-height: 25px;
+  min-height: 26px;
   max-width: 25px;
-  max-height: 25px;
+  max-height: 26px;
   padding: 0px !important;
   border-radius: 100px;
   transition: all 0.2s;
