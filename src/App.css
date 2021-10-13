@@ -80,6 +80,9 @@ body {
   .welcomeHeader {
     font-size: 70px !important;
   }
+  .selectedMap-cont .selected-map {
+    font-size: 43px !important;
+  }
 }
 
 .welcomeDesc {
@@ -95,6 +98,7 @@ body {
   min-width: 120px;
   text-align: center !important;
   transition: all 0.4s;
+  font-size: calc(0.5vw + 0.7rem);
 }
 
 .welcomeButton .support-btn {
@@ -109,6 +113,19 @@ body {
 
 .welcomeButton a:hover {
   transform: translateY(-10px);
+}
+
+.margin-up-100 {
+  margin-top: 25vh !important;
+}
+
+.welcomeHintHeader span {
+  border-radius: 300px;
+  font-size: calc(0.5vw + 1.5rem);
+  background-color: #009ade;
+  color: white;
+  font-weight: 500;
+  padding: 5px 15px 5px 15px !important;
 }
 
 .welcomeHint {
@@ -152,4 +169,21 @@ body {
 
 .land:hover {
   fill: #f14190;
+}
+
+/* ! SELECTED MAP SECT. ! */
+
+.selectedMap-cont .selected-map {
+  font-size: calc(0.5vw + 1.5rem);
+  font-weight: 600;
+}
+
+.selectedMap-cont .selected-map-desc {
+  font-size: 17px;
+}
+
+.selected-map span {
+  color: #ff0073;
+  border-bottom: 1px solid #ff0073;
+  padding-bottom: 0px;
 }
