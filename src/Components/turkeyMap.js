@@ -1,42 +1,51 @@
 import React, {Component} from 'react'
 import ReactTooltip from 'react-tooltip'
 import {animateScroll as scroll} from 'react-scroll'
+import Select from 'react-select'
+
 import MapContext from './MapContext'
 
 export class turkeyMap extends Component {
   static contextType = MapContext
+
   constructor(props) {
     super(props)
+    this.state = {
+      selectedMap: 'Ankara',
+      options: [
+        {value: 'Ankara', label: 'Ankara'},
+        {value: 'Istanbul', label: 'Istanbul'},
+        {value: 'Antalya', label: 'Antalya'}
+      ]
+    }
     this.mapGroup = React.createRef()
     this.setAllTooltip = this.setAllTooltip.bind(this)
+    this.changeSelectedMap = this.changeSelectedMap.bind(this)
   }
 
   componentDidMount() {
     const {setMap} = this.context
     this.setAllTooltip()
-
     document.querySelectorAll('.land').forEach((elm) => {
       elm.addEventListener('click', () => {
         document.querySelector('.map-selected').classList.remove('map-selected')
         elm.classList.add('map-selected')
-        this.setState({selectedCountry: elm.getAttribute('data-tip')})
+        this.setState({selectedMap: elm.getAttribute('data-tip')})
 
-        setMap(this.state.selectedCountry)
+        setMap(this.state.selectedMap)
         this.scrollTo()
       })
     })
+  }
 
-    document.querySelector('.form-select').addEventListener('change', (elm) => {
-      try {
-        document.querySelector('.map-selected').classList.remove('map-selected')
-        document
-          .querySelector(`.land[data-tip="${elm.target.value}"]`)
-          .classList.add('map-selected')
-        setMap(elm.target.value)
-      } catch (err) {
-        console.log(err)
-      }
-    })
+  changeSelectedMap(e) {
+    const {setMap} = this.context
+    document.querySelector('.map-selected').classList.remove('map-selected')
+    document
+      .querySelector(`.land[data-tip="${e.value}"]`)
+      .classList.add('map-selected')
+    this.setState({selectedMap: e.value})
+    setMap(e.value)
   }
 
   setAllTooltip() {
@@ -60,22 +69,14 @@ export class turkeyMap extends Component {
       <div className="col-12 d-flex flex-wrap justify-content-center align-items-center p-0 m-0">
         <div className="col-12 d-flex d-xl-none d-lg-none text-center p-3">
           <div className="mobil-map-selector col-12 d-flex justify-content-center align-items-center p-5">
-            <select
-              onChange={this.scrollToMobil}
-              className="form-select"
-              aria-label="Map Select"
-            >
-              <optgroup className="fontPop" label="İller">
-                <option value="Istanbul">Istanbul</option>
-                <option value="Ankara" selected>
-                  Ankara
-                </option>
-                <option value="İzmir">İzmir</option>
-                <option value="Antalya">Antalya</option>
-                <option value="Erzurum">Erzurum</option>
-                <option value="Konya">Konya</option>
-              </optgroup>
-            </select>
+            <Select
+              placeholder={this.state.selectedMap}
+              className="col-12 select-county"
+              value={this.state.selectedMap}
+              options={this.state.options}
+              noOptionsMessage={({inputValue}) => 'Bulunamadı.'}
+              onChange={this.changeSelectedMap}
+            />
           </div>
         </div>
         <div

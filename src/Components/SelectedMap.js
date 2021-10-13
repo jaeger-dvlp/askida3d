@@ -36,28 +36,27 @@ export class SelectedMap extends Component {
         className="container-lg container-xl pb-5 "
       >
         <div className="col-12 pt-5 p-xl-3 p-lg-3 p-1 selectedMap-cont m-0 d-flex row">
-          <div className="col-12 selected-map pb-1">
+          <div className="col-12 text-pos selected-map pb-1">
             <h1 className>
               <span>{currentMap} bekleme listesi</span>
             </h1>
           </div>
-          <div className="col-12 text-left selected-map-desc">
-            Okullar MEB sistemi üzerinden güncel olarak listelenmektedir ve 3D
-            yazıcı bağışlanabilecek okullar aşağıdadır.
+          <div className="col-12 text-pos selected-map-desc">
+            Seçilen ile ait 3D Yazıcı bekleyen okullar aşağıdadır.
           </div>
-          <div className="col-12 pt-2 text-left selected-map-desc">
+          <div className="col-12 bold pt-2 text-pos selected-map-desc">
             Bekleyen Okul Sayısı : 0
           </div>
           <div className="col-12 selected-map-list text-left m-0 p-4 mt-4 row"></div>
         </div>
         <div className="col-12 d-flex flex-wrap alphabet justify-content-center align-items-center  p-xl-3 p-lg-3 p-1">
-          <span className="alphabet-elm p-2">A</span>
+          <span className="alphabet-elm p-2 selected-alphabet">A</span>
           <span className="alphabet-elm p-2">B</span>
           <span className="alphabet-elm p-2">C</span>
           <span className="alphabet-elm p-2">D</span>
           <span className="alphabet-elm p-2">E</span>
           <span className="alphabet-elm p-2">F</span>
-          <span className="alphabet-elm p-2 selected-alphabet">G</span>
+          <span className="alphabet-elm p-2">G</span>
           <span className="alphabet-elm p-2">H</span>
           <span className="alphabet-elm p-2">I</span>
           <span className="alphabet-elm p-2">J</span>
