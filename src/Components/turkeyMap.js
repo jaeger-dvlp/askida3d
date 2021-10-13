@@ -12,11 +12,7 @@ export class turkeyMap extends Component {
     super(props)
     this.state = {
       selectedMap: 'Ankara',
-      options: [
-        {value: 'Ankara', label: 'Ankara'},
-        {value: 'Istanbul', label: 'Istanbul'},
-        {value: 'Antalya', label: 'Antalya'}
-      ]
+      options: ''
     }
     this.mapGroup = React.createRef()
     this.setAllTooltip = this.setAllTooltip.bind(this)
@@ -24,7 +20,9 @@ export class turkeyMap extends Component {
   }
 
   componentDidMount() {
-    const {setMap} = this.context
+    console.log(this.context)
+    const {setMap, counties} = this.context
+    this.setState({options: counties})
     this.setAllTooltip()
     document.querySelectorAll('.land').forEach((elm) => {
       elm.addEventListener('click', () => {
