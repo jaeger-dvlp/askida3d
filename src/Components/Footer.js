@@ -14,18 +14,21 @@ export default class Footer extends Component {
               Z Eksen Baskı Sistemleri ve Bilgi Teknolojileri San. ve Tic. A.Ş.
             </div>
 
-            <div className="col-12 f-light pt-1 d-flex justify-content-center text-center">
-              Yeşilçe Mh. Seçilmiş Sk. No: 2 Kağıthane
-              <span
-                style={{
-                  color: '#009ade',
-                  paddingRight: '5px',
-                  paddingLeft: '5px'
-                }}
-              >
-                /
-              </span>
-              Istanbul
+            <div className="col-12 f-light pt-1 d-flex flex-wrap justify-content-center text-center">
+              <div className="col-12">Yeşilçe Mh. Seçilmiş Sk. No: 2</div>
+              <div className="col-12">
+                Kağıthane
+                <span
+                  style={{
+                    color: '#009ade',
+                    paddingRight: '5px',
+                    paddingLeft: '5px'
+                  }}
+                >
+                  /
+                </span>
+                Istanbul
+              </div>{' '}
             </div>
             <div className="col-12 f-light d-flex justify-content-center align-items-center text-center">
               <a href="tel:0212 279 0060">0212 279 00 60</a>
