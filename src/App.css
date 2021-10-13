@@ -215,3 +215,46 @@ body {
 .printerSection ul {
   color: #747474;
 }
+
+/* ! COLLAPSE AREA ! */
+
+.questionSectionHeader {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.collapse-area .collapsable-area {
+  margin-top: 20px !important;
+}
+
+.collapse-area button {
+  outline: none !important;
+  border: none !important;
+  background-color: transparent;
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.collapse-area button[aria-expanded='true'] .plus {
+  background-color: #f14190 !important;
+  transform: rotate(90deg);
+}
+
+.collapse-area button[aria-expanded='false'] .plus {
+  background-color: #0039b2 !important;
+}
+
+.collapse-area .plus {
+  text-align: center !important;
+  color: white !important;
+  font-size: 1.2rem !important;
+  margin-right: 10px;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
