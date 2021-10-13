@@ -10,7 +10,7 @@ export default class PrizeSection extends Component {
           <div
             data-aos="fade-left"
             data-aos-delay="400"
-            className="p-0 m-0 col-12 col-xl-6 col-lg-6 p-3 d-flex justify-content-center align-items-center"
+            className=" m-0 col-12 col-xl-6 col-lg-6 p-3 d-flex justify-content-center align-items-center"
           >
             <img src={PrizeIMG} alt="prize_img" className=" m-0 col-12" />
           </div>
