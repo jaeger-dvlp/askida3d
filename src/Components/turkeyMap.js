@@ -70,7 +70,12 @@ export class turkeyMap extends Component {
   render() {
     return (
       <div className="col-12 d-flex flex-wrap justify-content-center align-items-center p-0 m-0">
-        <div className="col-12 d-flex d-xl-none d-lg-none text-center p-3">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          className="col-12 d-flex d-xl-none d-lg-none text-center p-3"
+        >
           <div className="mobil-map-selector col-12 d-flex justify-content-center align-items-center p-5">
             <Select
               placeholder={this.state.selectedMap}
