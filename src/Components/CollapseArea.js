@@ -22,20 +22,20 @@ export default class CollapseArea extends Component {
                     className="d-flex align-items-center"
                     data-toggle="collapse"
                     data-target="#collapseONE"
-                    aria-expanded="true"
+                    aria-expanded="false"
                     aria-controls="collapseONE"
                   >
                     <span className="plus d-flex justify-content-center align-items-center text-center">
                       -
                     </span>{' '}
-                    Sıkça Sorulan Sorular 1?
+                    Sıkça Sorulan Soru #1
                   </button>
                 </h5>
               </div>
 
               <div
                 id="collapseONE"
-                className="collapse show"
+                className="collapse"
                 aria-labelledby="headingONE"
                 data-parent="#accordion"
               >
@@ -61,7 +61,7 @@ export default class CollapseArea extends Component {
                     <span className="plus d-flex justify-content-center align-items-center text-center">
                       -
                     </span>
-                    Sıkça Sorulan Sorular 2?
+                    Sıkça Sorulan Soru #2
                   </button>
                 </h5>
               </div>
@@ -69,6 +69,37 @@ export default class CollapseArea extends Component {
                 id="collapseTWO"
                 className="collapse"
                 aria-labelledby="headingTWO"
+                data-parent="#accordion"
+              >
+                <div className="card-body">
+                  Use filler text where it helps your design process, but use
+                  real content if you’ve got it, as long as it doesn’t distract
+                  and slow down your design process.
+                </div>
+              </div>
+            </div>
+
+            <div className="collapsable-area">
+              <div className="" id="headingTHREE">
+                <h5 className="mb-0">
+                  <button
+                    className="collapsed d-flex align-items-center"
+                    data-toggle="collapse"
+                    data-target="#collapseTHREE"
+                    aria-expanded="false"
+                    aria-controls="collapseTHREE"
+                  >
+                    <span className="plus d-flex justify-content-center align-items-center text-center">
+                      -
+                    </span>
+                    Sıkça Sorulan Soru #3
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTHREE"
+                className="collapse"
+                aria-labelledby="headingTHREE"
                 data-parent="#accordion"
               >
                 <div className="card-body">
