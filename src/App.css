@@ -25,6 +25,16 @@ body {
   overflow-x: hidden !important;
 }
 
+.text-pos {
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .text-pos {
+    text-align: left !important;
+  }
+}
+
 .logo img {
   transition: all 0.2s;
   cursor: pointer;
