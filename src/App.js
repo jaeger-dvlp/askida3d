@@ -11,6 +11,7 @@ import PrinterSection from './Components/PrinterSection'
 import PrizeSection from './Components/PrizeSection'
 
 import {MapProvider} from './Components/MapContext'
+import CollapseArea from './Components/CollapseArea'
 AOS.init()
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <SelectedMap></SelectedMap>
       <PrinterSection />
       <PrizeSection />
+      <CollapseArea />
     </MapProvider>
   )
 }
