@@ -76,11 +76,11 @@ export class WelcomeSection extends Component {
           </div>
         </div>
         <div
-          className="col-12 margin-up-100"
+          className="col-12 margin-up-100 "
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <div className="d-flex col-12 text-center justify-content-center align-items-center welcomeHintHeader pt-5 mt-5 pb-2 p-1">
+          <div className="d-flex col-12 text-center p-3 justify-content-center align-items-center welcomeHintHeader pt-5 mt-5 pb-2">
             <span className="">Bekleyen Eğitim Kurumları</span>
           </div>
         </div>
