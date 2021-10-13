@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {BrowserRouter as Router, Link} from 'react-router-dom'
 import Logo from '../img/logo.svg'
-import {animateScroll as scroll, Events} from 'react-scroll'
+import {animateScroll as scroll} from 'react-scroll'
 export class Header extends Component {
   constructor(props) {
     super(props)
