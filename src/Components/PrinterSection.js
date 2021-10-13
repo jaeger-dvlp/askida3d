@@ -22,12 +22,11 @@ export default class PrinterSection extends Component {
             </div>
             <div className="col-12 text-pos">
               <ul className="p-4">
+                <li>Tam Otomatik kalibrasyon & Z Tilt kalibrasyon.</li>
+                <li>Wi-Fi, Ethernet & USB üzerinden bağlantı.</li>
                 <li>%100 yerli üretim ve tam destek.</li>
-
-                <li>Aliquam mauris eu rius.</li>
-
-                <li>Vestibulum daqibus neque mauris eu risus.</li>
-                <li>Nucn dignissim risus metus dignissim risus.</li>
+                <li>220 x 230 x 250 mm Baskı hacmi.</li>
+                <li>HEPA + Karbon Filtre</li>
               </ul>
             </div>
           </div>
