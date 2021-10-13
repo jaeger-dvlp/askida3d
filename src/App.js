@@ -12,7 +12,7 @@ AOS.init()
 
 function App() {
   return (
-    <MapProvider value={{currentMap: 'İstanbul'}}>
+    <MapProvider value={{currentMap: ''}}>
       <Header></Header>
       <WelcomeSection></WelcomeSection>
       <Map></Map>
