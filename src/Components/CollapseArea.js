@@ -39,13 +39,7 @@ export default class CollapseArea extends Component {
                 aria-labelledby="headingONE"
                 data-parent="#accordion"
               >
-                <div className="card-body">
-                  Design is an evolutionary process, and filler text is just one
-                  tool in your progress-pushing arsenal. Use it where it makes
-                  sense to use it, and pull it once the natural process
-                  indicates that it’s time to roll out a descendant built with
-                  real content.
-                </div>
+                <div className="card-body">...</div>
               </div>
             </div>
             <div className="collapsable-area">
@@ -71,11 +65,7 @@ export default class CollapseArea extends Component {
                 aria-labelledby="headingTWO"
                 data-parent="#accordion"
               >
-                <div className="card-body">
-                  Use filler text where it helps your design process, but use
-                  real content if you’ve got it, as long as it doesn’t distract
-                  and slow down your design process.
-                </div>
+                <div className="card-body">...</div>
               </div>
             </div>
 
@@ -102,11 +92,7 @@ export default class CollapseArea extends Component {
                 aria-labelledby="headingTHREE"
                 data-parent="#accordion"
               >
-                <div className="card-body">
-                  Use filler text where it helps your design process, but use
-                  real content if you’ve got it, as long as it doesn’t distract
-                  and slow down your design process.
-                </div>
+                <div className="card-body">...</div>
               </div>
             </div>
           </div>
