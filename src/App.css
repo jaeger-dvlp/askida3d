@@ -187,3 +187,31 @@ body {
   border-bottom: 1px solid #ff0073;
   padding-bottom: 0px;
 }
+
+.alphabet-elm {
+  color: #a5a5a5;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: calc(0.5vw + 0.8rem);
+  font-weight: 600;
+}
+.alphabet-elm:not(.selected-alphabet):hover {
+  color: #707070;
+}
+
+.alphabet-elm.selected-alphabet {
+  color: black;
+  transform: scale(1.5);
+}
+
+/*!  PRINTER SECTION !*/
+
+.printerSectionHeader {
+  color: black;
+  font-weight: 600;
+  font-size: calc(1.5vw + 1.5rem);
+}
+
+.printerSection ul {
+  color: #747474;
+}
