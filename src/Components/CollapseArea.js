@@ -10,7 +10,7 @@ export default class CollapseArea extends Component {
       >
         <div className="col-12 p-3 d-flex flex-wrap ">
           <div className="col-12">
-            <h1 className="col-12 questionSectionHeader">
+            <h1 className="col-12 printerSectionHeader">
               Sıkça Sorulan Sorular
             </h1>
           </div>
