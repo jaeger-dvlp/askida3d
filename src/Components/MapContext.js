@@ -2,20 +2,21 @@ import React, {Component} from 'react'
 let MapContext = React.createContext('')
 
 class MapProvider extends Component {
-  state = {
-    currentMap: 'İstanbul'
-  }
+  state = {currentMap: 'İstanbul', waitingSchoolCount: 0}
 
   setMap = (currentMap) => {
-    this.setState({currentMap: currentMap})
+    this.setState({
+      currentMap: currentMap,
+      waitingSchoolCount: Math.floor(Math.random() * 10)
+    })
   }
   render() {
     const {children} = this.props
-    const {currentMap} = this.state
+    const {currentMap, waitingSchoolCount} = this.state
     const {setMap} = this
 
     return (
-      <MapContext.Provider value={{currentMap, setMap}}>
+      <MapContext.Provider value={{currentMap, setMap, waitingSchoolCount}}>
         {children}
       </MapContext.Provider>
     )
