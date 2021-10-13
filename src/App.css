@@ -22,7 +22,7 @@ a {
 }
 
 body {
-  min-height: 2000px;
+  overflow-x: hidden !important;
 }
 
 .logo img {
