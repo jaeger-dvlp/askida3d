@@ -44,7 +44,7 @@ export class WelcomeSection extends Component {
             >
               <h4 className="welcomeDesc pt-3 pb-3">
                 3D Yazıcı bekleyen okullar için siz de bağış
-                <br />
+                <br className="d-lg-block d-xl-block d-md-block d-none" />
                 yaparak eğitim öğretime katkı sağlayabilirsiniz.
               </h4>
             </div>
