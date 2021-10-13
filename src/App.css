@@ -5,6 +5,14 @@
   font-family: Poppins;
 }
 
+optgroup {
+  font-family: Poppins !important;
+}
+
+.fontPop {
+  font-family: Poppins !important;
+}
+
 html {
   scroll-behavior: smooth !important;
 }
@@ -171,6 +179,13 @@ body {
   fill: #f14190;
 }
 
+/* ! MOBIL MAP SECT ! */
+
+.mobil-map-selector {
+  background-color: #f14190;
+  border-radius: 20px;
+}
+
 /* ! SELECTED MAP SECT. ! */
 
 .selectedMap-cont .selected-map {
@@ -233,7 +248,7 @@ body {
   border: none !important;
   background-color: transparent;
   color: black;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -258,4 +273,28 @@ body {
   padding: 0px !important;
   border-radius: 100px;
   transition: all 0.2s;
+}
+
+/* !  FOOTER ! */
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.f-light {
+  font-size: smaller;
+}
+
+.f-light.text-justify {
+  text-align-last: center;
+}
+
+.footer a {
+  text-decoration: none !important;
+  color: white !important;
 }
