@@ -29,7 +29,14 @@ export class Header extends Component {
       >
         <div className="col-12 d-flex p-0 m-0">
           <div className="logo col-12 col-lg-6 col-xl-6 p-3 m-0 d-flex justify-content-center justify-content-xl-start justify-content-lg-start">
-            <img alt="Askida3D Logo" src={Logo} height="50"></img>
+            <img
+              onClick={() => {
+                window.location.href = 'https://askida3d.com'
+              }}
+              alt="Askida3D Logo"
+              src={Logo}
+              height="50"
+            ></img>
           </div>
           <div className="header-nav col-xl-6 col-lg-6 p-3 m-0 justify-content-end align-items-center d-xl-flex d-lg-flex d-none">
             <Router>
@@ -41,7 +48,7 @@ export class Header extends Component {
               </div>
               <div className="">
                 <Link to="" onClick={this.scrollToPrinters}>
-                  3D Yazıcılar
+                  3D Yazıcı
                 </Link>
                 <div className="header-nav-anim-elm"></div>
               </div>
