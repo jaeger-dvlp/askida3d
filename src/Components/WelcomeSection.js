@@ -24,7 +24,7 @@ export class WelcomeSection extends Component {
         data-aos-delay="400"
         className="welcomeSection container-xl container-lg p-0 col-12"
       >
-        <div className="my-auto mt-5 mb-5 p-0 d-flex align-items-center row m-0">
+        <div className="my-auto mt-5 mb-5  p-0 d-flex align-items-center row m-0">
           <div className="col-12 col-lg-6 col-xl-6 p-3 welcomeLeft">
             <div
               data-aos="fade-right"
@@ -54,12 +54,16 @@ export class WelcomeSection extends Component {
               className="text-left pt-3 pb-3 d-flex welcomeButton"
             >
               <Router>
-                <Link to="" onClick={this.scrollTo} className="support-btn">
-                  Destek Ol
-                </Link>
-                <Link to="" className="signup-btn">
-                  Kayıt Ol
-                </Link>
+                <div className="d-lg-flex d-xl-flex d-inline ">
+                  <Link to="" onClick={this.scrollTo} className="support-btn">
+                    Destek Ol
+                  </Link>
+                </div>
+                <div className="d-lg-flex d-xl-flex d-inline ">
+                  <Link to="" className="signup-btn">
+                    Kayıt Ol
+                  </Link>
+                </div>
               </Router>
             </div>
           </div>
@@ -68,15 +72,24 @@ export class WelcomeSection extends Component {
             data-aos-delay="600"
             className=" col-lg-6 col-xl-6 p-3 d-none d-xl-flex d-lg-flex justify-content-end align-items-center welcomeRight"
           >
-            <img alt="welcome-x2" src={WelcomeIMG} width="100%"></img>
+            <img alt="welcome-x2" className="col-12" src={WelcomeIMG}></img>
+          </div>
+        </div>
+        <div
+          className="col-12 margin-up-100"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div className="d-flex col-12 text-center justify-content-center align-items-center welcomeHintHeader pt-5 mt-5 pb-2 p-1">
+            <span className="">Bekleyen Okullarımız</span>
           </div>
         </div>
         <div
           data-aos="fade-up"
           data-aos-delay="100"
-          className="col-12 text-center welcomeHint pt-3 pb-3 p-1"
+          className="col-12 text-center welcomeHint  pb-3 p-1"
         >
-          Yardım etmek istediğiniz okulları dilerseniz aşşağıdan kendiniz
+          Yardım etmek istediğiniz okulları dilerseniz aşağıdan kendiniz
           belirleyebilir
           <br />
           veya belirli bir bölgeden yazıcısı olmayan okulları listesinden
