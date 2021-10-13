@@ -10,11 +10,11 @@ export default class Footer extends Component {
             <div className="col-12 d-flex justify-content-center">
               <img src={Logo} alt="footer-logo" width="150px" />
             </div>
-            <div className="col-12 pt-4 bold d-flex justify-content-center text-center">
+            <div className="col-12 pt-4 bold d-none justify-content-center text-center">
               Z Eksen Baskı Sistemleri ve Bilgi Teknolojileri San. ve Tic. A.Ş.
             </div>
 
-            <div className="col-12 f-light pt-1 d-flex flex-wrap justify-content-center text-center">
+            <div className="col-12 f-light pt-1 d-none flex-wrap justify-content-center text-center">
               <div className="col-12">Yeşilçe Mh. Seçilmiş Sk. No: 2</div>
               <div className="col-12">
                 Kağıthane
@@ -30,7 +30,7 @@ export default class Footer extends Component {
                 Istanbul
               </div>{' '}
             </div>
-            <div className="col-12 f-light d-flex justify-content-center align-items-center text-center">
+            <div className="col-12 f-light d-none justify-content-center align-items-center text-center">
               <a href="tel:0212 279 0060">0212 279 00 60</a>
               <span
                 style={{
@@ -43,7 +43,7 @@ export default class Footer extends Component {
               </span>
               <a href="tel:0212 280 9293">0212 280 92 93</a>
             </div>
-            <div className="f-light pt-3 pb-3 col-12 d-flex justify-content-center align-items-center text-justify">
+            <div className="f-light pt-3 pb-3 col-12 d-none justify-content-center align-items-center text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               mattis tortor quis turpis cursus, eget aliquam mi ultricies.
               Maecenas a iaculis neque. Ut a neque accumsan justo ultrices
