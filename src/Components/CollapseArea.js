@@ -25,7 +25,7 @@ export default class CollapseArea extends Component {
                     aria-expanded="true"
                     aria-controls="collapseONE"
                   >
-                    <span className="plus d-flex justify-content-center align-items-center">
+                    <span className="plus d-flex justify-content-center align-items-center text-center">
                       -
                     </span>{' '}
                     Sıkça Sorulan Sorular 1?
@@ -58,7 +58,7 @@ export default class CollapseArea extends Component {
                     aria-expanded="false"
                     aria-controls="collapseTWO"
                   >
-                    <span className="plus d-flex justify-content-center align-items-center">
+                    <span className="plus d-flex justify-content-center align-items-center text-center">
                       -
                     </span>
                     Sıkça Sorulan Sorular 2?
