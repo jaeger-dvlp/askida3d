@@ -15,7 +15,7 @@ export default class Footer extends Component {
             </div>
 
             <div className="col-12 f-light pt-1 d-flex justify-content-center text-center">
-              Yeşilçe Mh. Seçilmiş Sk. No : 2 {'  '} Kağıthane
+              Yeşilçe Mh. Seçilmiş Sk. No: 2 Kağıthane
               <span
                 style={{
                   color: '#009ade',
