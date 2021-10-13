@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 let MapContext = React.createContext('')
 
 class MapProvider extends Component {
-  state = {currentMap: 'İstanbul', waitingSchoolCount: 0}
+  state = {currentMap: 'Ankara', waitingSchoolCount: 0}
 
   setMap = (currentMap) => {
     this.setState({
