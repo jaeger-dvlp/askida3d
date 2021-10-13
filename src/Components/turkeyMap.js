@@ -20,6 +20,7 @@ export class turkeyMap extends Component {
         document.querySelector('.map-selected').classList.remove('map-selected')
         elm.classList.add('map-selected')
         this.setState({selectedCountry: elm.getAttribute('data-tip')})
+
         setMap(this.state.selectedCountry)
         this.scrollTo()
       })
@@ -36,7 +37,7 @@ export class turkeyMap extends Component {
   }
 
   scrollTo() {
-    scroll.scrollTo(900, {duration: 70, smooth: true, spy: true})
+    scroll.scrollTo(1150, {duration: 70, smooth: true, spy: true})
   }
 
   render() {
