@@ -33,7 +33,7 @@ export default class PrinterSection extends Component {
             data-aos-delay="400"
             className="p-0 m-0 col-12 col-xl-6 col-lg-6 p-3 d-flex justify-content-center align-items-center"
           >
-            <img src={PrinterIMG} alt="x3_img" className=" m-0 col-12" />
+            <img src={PrinterIMG} alt="x3_img" className="m-0 col-12" />
           </div>
         </div>
       </div>
